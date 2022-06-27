@@ -1,27 +1,20 @@
 
 #include "stdio.h"
-#include "stdlib.h"
 
-int Sum(int num1,int num2);
+int main()
+    {
+        /*
+        代码段功能：用于确定计算机存储方式为大端模式或小端模式
+        大端模式：高字节存储在低地址，低字节存储在高地址
+        小端模式：高字节存储在高地址，低字节存储在低地址
+        */ 
+    #if 1
 
-int main(){
+        unsigned int a = 0x12345678;
+        char *p = (char*)(&a);
+        printf("0x%x", *p);
 
-    int num1 = 1;
-    int num2 = 3; 
-    int sum = 0; 
-    sum = num1 + num2;
-    
-    printf("Hello World!\n");
-    
-    printf("num1 + num2 =%d\n",sum);
-    printf("num1 + num2 =%d\n",Sum(num1,num2));
+    #endif
 
-
-    return 0;
-}
-
-int Sum(int num1,int num2){
-
-    return num1 + num2;
-
-}
+        return 0;
+    }

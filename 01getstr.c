@@ -16,5 +16,6 @@ int main(void)
     printf("the str2 is:%s\n",str2);
 
     free(str1);
+
     return 0;
 }
