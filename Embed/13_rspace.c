@@ -2,7 +2,12 @@
 
 
 int main(void)
-    {
+    {   /*
+        全局变量数据段
+        栈空间数据段
+        常量数据段
+        代码段
+        */
         char *p1 = "hello world!\n";
         char buf[] = {"hello world!\n"};
         char *p2 = buf;
